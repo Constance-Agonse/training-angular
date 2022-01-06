@@ -4,7 +4,8 @@
   <p> {{faceSnap.description}} </p>
   <p> {{ faceSnap.createdDate | date }} </p>
   <p> <button (click)="onSnap()" > {{buttonText}} </button>
-    snaps: {{faceSnap.snaps}} </p>
+    <span [ngStyle]= "{ color: 'rgb(0,'+ faceSnap.snaps + ',0)' }" >snaps: {{faceSnap.snaps}}</span>
+     </p>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
   <p *ngIf="faceSnap.location"> {{faceSnap.location}} </p>
 </div>
