@@ -1,5 +1,6 @@
 <div class="face-snap-card"  [ngClass] = "{snapped: buttonText==='oups un snap' }">
-
+<p>{{ 5.678901234 | currency: 'EUR' }}</p>
+<span>{{ 122422.467 | number }}</span>
   <h2> {{faceSnap.title}} </h2>
   <p> {{faceSnap.description}} </p>
   <p> {{ faceSnap.createdDate | date }} </p>
